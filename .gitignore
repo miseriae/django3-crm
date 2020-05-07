@@ -1,0 +1,6 @@
+local_settings.py
+*env
+.vscode
+**/*.pyc
+**/__pycache__
+*.sqlite3
