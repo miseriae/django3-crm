@@ -1,9 +1,11 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 from phonenumber_field.modelfields import PhoneNumberField
 
 
 class Customer(models.Model):
+    user = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
     name = models.CharField(max_length=200, null=True)
     phone = PhoneNumberField(null=True, unique=True)
     email = models.EmailField(null=True)
