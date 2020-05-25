@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'accounts',
 
     'phonenumber_field',
+    'django_filters'
 ]
 
 MIDDLEWARE = [
